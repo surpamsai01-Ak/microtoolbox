@@ -1,0 +1,862 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= PREMIUM MULTI-REGIONAL GLOBAL SEO ENGINE ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroToolbox - Free Premium Utility Tools & Deep Focus Play Zone</title>
+    <meta name="description" content="Access free high-traffic premium utility tools. Calculate regional salary taxes, planner budget with 50/30/20 rule, generate aesthetic fancy fonts copy paste, instant QR codes maker, and play 2048 unblocked game.">
+    
+    <!-- High-Volume Search Intent Keyword Matrix (Google Core Ranking Boost) -->
+    <meta name="keywords" content="microtoolbox, free online utility tools, aesthetic font generator copy paste, stylish text maker instagram, cool copy paste fonts, instant qr code generator free, online bill splitter with tip, paycheck tax calculator, salary take home calculator, monthly budget planner app, 50 30 20 budget calculator, pomodoro focus block timer online, deep work countdown timer, play 2048 game unblocked mobile, 2048 swipe game website">
+    <meta name="robots" content="index, follow">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    
+    <!-- Open Graph Tags (For Viral Social Sharing Previews) -->
+    <meta property="og:title" content="MicroToolbox - Global Premium Utility & Focus Station">
+    <meta property="og:description" content="Multi-regional calculation engines. Transform text fonts, manage global finance sheets, split dining bills, and play 2048 unblocked for free.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MicroToolbox">
+
+    <!-- Structured Data: WebApplication Schema Markup for Search Snippet Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MicroToolbox",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Stylesheets & Core Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Tailwind Performance Optimization Injection Layer -->
+    <style>
+        html { visibility: visible; opacity: 1; }
+        body {
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a 60%, #020617);
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .neon-glow:focus {
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+        }
+        .active-tab {
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        .active-finance-tab {
+            background: #6366f1;
+            color: #ffffff;
+        }
+        .active-country-pill {
+            background: rgba(16, 185, 129, 0.2);
+            border-color: rgb(16, 185, 129);
+            color: #34d399;
+        }
+        @keyframes flagEntrance {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .flag-glow-box {
+            animation: flagEntrance 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.1) forwards;
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+        }
+        .grid-2048-cell {
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 20px;
+            transition: all 0.1s ease-in-out;
+            user-select: none;
+        }
+        .tile-empty { color: transparent; }
+        .tile-2 { background: #e2e8f0; color: #0f172a; }
+        .tile-4 { background: #cbd5e1; color: #0f172a; }
+        .tile-8 { background: #fdba74; color: #ffffff; box-shadow: 0 0 10px rgba(253,186,116,0.3); }
+        .tile-16 { background: #f97316; color: #ffffff; box-shadow: 0 0 12px rgba(249,115,22,0.4); }
+        .tile-32 { background: #f87171; color: #ffffff; }
+        .tile-64 { background: #ef4444; color: #ffffff; }
+        .tile-128 { background: #fde047; color: #0f172a; font-size: 18px; box-shadow: 0 0 15px rgba(253,224,71,0.5); }
+        .tile-256 { background: #eab308; color: #0f172a; font-size: 18px; }
+        .tile-512 { background: #a3e635; color: #0f172a; font-size: 18px; }
+        .tile-1024 { background: #22c55e; color: #ffffff; font-size: 16px; }
+        .tile-2048 { background: #06b6d4; color: #ffffff; font-size: 16px; box-shadow: 0 0 25px rgba(6,182,212,0.8); }
+        
+        @keyframes toastIn {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes toastOut {
+            0% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+        .animate-toast-in { animation: toastIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        .animate-toast-out { animation: toastOut 0.3s ease forwards; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen font-sans antialiased">
+
+    <!-- Dynamic Mobile Toast Alert Container Node -->
+    <div id="toastNotificationHub" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[9999] w-[85%] max-w-xs pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-slate-950/40 backdrop-blur-md px-4 py-4 sticky top-0 z-50">
+        <div class="max-w-xl mx-auto flex flex-col gap-3">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-violet-400 via-indigo-400 to-cyan-400">
+                        🧰 MicroToolbox
+                    </h1>
+                    <p class="text-[10px] text-slate-400 font-bold tracking-wider uppercase mt-0.5">Project by Sahil Ai</p> <!-- Added Core Attribution Mark -->
+                </div>
+                <span class="text-[11px] font-bold tracking-widest uppercase bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-md">
+                    Engine Status: Active
+                </span>
+            </div>
+
+            <!-- Navigation Tabs (Updated Sequence) -->
+            <nav class="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+                <button id="tab-font" onclick="switchTool('font')" class="active-tab shrink-0 text-xs font-bold px-4 py-2 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 transition-all cursor-pointer">✨ Font Gen</button>
+                <button id="tab-qrcode" onclick="switchTool('qrcode')" class="shrink-0 text-xs font-bold px-4 py-2 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 transition-all cursor-pointer">📷 QR Code</button>
+                <button id="tab-finance" onclick="switchTool('finance')" class="shrink-0 text-xs font-bold px-4 py-2 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 transition-all cursor-pointer">💵 Finance Hub</button>
+                <button id="tab-pomodoro" onclick="switchTool('pomodoro')" class="shrink-0 text-xs font-bold px-4 py-2 rounded-xl border border-slate-800 bg-slate-900/40 text-slate-400 transition-all cursor-pointer">⏱️ Deep Work</button>
+                <button id="tab-playzone" onclick="switchTool('playzone')" class="shrink-0 text-xs font-extrabold px-4 py-2 rounded-xl border border-indigo-900/50 bg-indigo-950/20 text-indigo-400 transition-all cursor-pointer">🎮 Play Zone</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-xl w-full mx-auto px-4 py-6">
+
+        <!-- ================= TOOL 1: FONT GENERATOR ================= -->
+        <section id="tool-font" class="space-y-6">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white mb-2">Aesthetic Font Generator</h2>
+                <p class="text-slate-400 text-sm">Transform text into 16 premium stylish fonts instantly for profiles, captions, and gaming handles.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-4 shadow-2xl border border-slate-800">
+                <label class="block text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-2">Input Text</label>
+                <input type="text" id="userInput" placeholder="Type your text here..." class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all text-base neon-glow font-medium">
+            </div>
+            <div class="space-y-4" id="fontResults">
+                <div class="text-center py-12 text-slate-500 text-sm border-2 border-dashed border-slate-800/60 rounded-2xl bg-slate-950/20">
+                    <p class="font-medium text-slate-400">Waiting for text input...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TOOL 2: QR CODE GENERATOR ================= -->
+        <section id="tool-qrcode" class="space-y-6 hidden">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white mb-2">Smart QR Code Generator</h2>
+                <p class="text-slate-400 text-sm">Create high-quality dynamic QR codes for custom links, text, or business profiles instantly.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-5 shadow-2xl border border-slate-800 space-y-4">
+                <div>
+                    <label class="block text-[10px] font-bold uppercase tracking-widest text-cyan-400 mb-2">Enter URL or Text</label>
+                    <input type="text" id="qrInput" placeholder="Enter link or custom text..." class="w-full bg-slate-900/90 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-all text-base neon-glow font-medium">
+                </div>
+                <button onclick="generateQRCode()" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold py-3.5 rounded-xl text-sm cursor-pointer">Generate QR Code ⚡</button>
+            </div>
+            <div id="qrResultCard" class="glass-card border border-slate-800 p-6 rounded-2xl flex flex-col items-center justify-center text-center hidden">
+                <div class="bg-white p-4 rounded-xl shadow-xl inline-block mb-4" id="qrcode"></div>
+                <p class="text-xs text-slate-400 mb-3 font-medium">Long press the image on mobile to download/save your QR code</p>
+                <button onclick="resetQR()" class="text-xs font-semibold text-slate-500 hover:text-white underline">Clear</button>
+            </div>
+        </section>
+
+        <!-- ================= TOOL 3: SMART FINANCE HUB ================= -->
+        <section id="tool-finance" class="space-y-6 hidden">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white mb-2">Smart Finance Hub</h2>
+                <p class="text-slate-400 text-sm">High-RPM Global Wealth Target Dashboard & Multi-Region Salary Calculators.</p>
+            </div>
+
+            <div class="glass-card border border-slate-800 rounded-xl p-3 space-y-2">
+                <span class="block text-[9px] font-black uppercase tracking-widest text-slate-400 text-center">Select Location Node</span>
+                <div class="flex flex-wrap gap-1.5 justify-center">
+                    <button onclick="activateCountryProtocol('USA', '🇺🇸', 'Welcome to Wall Street Node! High-Income Federal Bracket Matrix Active. 🗽')" class="active-country-pill border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇺🇸 USA</button>
+                    <button onclick="activateCountryProtocol('UK', '🇬🇧', 'Cheerio! London Financial Protocol Engaged. National Insurance Scales Applied. 👑')" class="border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇬🇧 UK</button>
+                    <button onclick="activateCountryProtocol('AUS', '🇦🇺', 'G\'day! Australian Treasury Model Active. High Audited Resource Yields. 🐨')" class="border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇦🇺 AUS</button>
+                    <button onclick="activateCountryProtocol('CAN', '🇨🇦', 'Welcome Maple Node! High Canadian Provincial Tax Engine Setup. 🍁')" class="border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇨🇦 CAN</button>
+                    <button onclick="activateCountryProtocol('GER', '🇩🇪', 'Guten Tag! Premium Frankfurt Stock & European Yield Protocol Engaged. 🦅')" class="border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇩🇪 GER</button>
+                    <button onclick="activateCountryProtocol('UAE', '🇦🇪', 'Marhaban! Dubai Tech Oasis Hub Enabled. 0% Personal Income Tax Protocol Active! 💎')" class="border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs font-bold flex items-center gap-1 bg-slate-900/60 cursor-pointer">🇦🇪 UAE</button>
+                </div>
+            </div>
+
+            <div id="flagContainer" class="w-full glass-card border border-emerald-500/30 rounded-xl p-3.5 flex items-center justify-center gap-3 flag-glow-box bg-gradient-to-r from-emerald-950/20 to-slate-950/50">
+                <span id="flagIconSlot" class="text-3xl animate-pulse">🇺🇸</span>
+                <div class="text-left">
+                    <span id="flagHeadingSlot" class="block text-[10px] font-black uppercase tracking-widest text-emerald-400">Premium Location Protocol</span>
+                    <p id="flagMessageSlot" class="text-xs text-slate-200 font-bold">Welcome to Wall Street Node! High-Income Federal Bracket Matrix Active. 🗽</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2 bg-slate-950/60 p-2 rounded-xl border border-slate-800 text-center">
+                <button id="fsub-pay" onclick="switchFinanceTab('pay')" class="active-finance-tab py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">💵 Paycheck Calc</button>
+                <button id="fsub-save" onclick="switchFinanceTab('save')" class="py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">📈 Wealth Projector</button>
+                <button id="fsub-free" onclick="switchFinanceTab('free')" class="py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">💼 Gig Income Tracker</button>
+                <button id="fsub-budget" onclick="switchFinanceTab('budget')" class="py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">📊 50/30/20 Planner</button>
+                <button id="fsub-loan" onclick="switchFinanceTab('loan')" class="py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">🏠 Mortgage Calc</button>
+                <button id="fsub-borrow" onclick="switchFinanceTab('borrow')" class="py-2.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-slate-400">🏦 Borrowing Capacity</button>
+                <button id="fsub-splitter" onclick="switchFinanceTab('splitter')" class="col-span-2 py-2.5 bg-indigo-950/30 border border-indigo-500/20 rounded-lg text-xs font-extrabold transition-all cursor-pointer text-indigo-300">🍕 Premium Tip & Bill Splitter</button>
+            </div>
+
+            <!-- SUB-TOOLS -->
+            <div id="fdiv-pay" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4">
+                <h3 class="text-base font-bold text-indigo-400 border-b border-slate-800 pb-2">Salary Tax & Paycheck Estimator (<span id="currencyTitle">USD</span>)</h3>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Gross Annual Salary</label>
+                    <input type="number" id="grossSalary" placeholder="e.g. 85000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-indigo-500">
+                </div>
+                <button onclick="calculateTakeHome()" class="w-full bg-indigo-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Calculate Net Paycheck ⚡</button>
+                <div id="payResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-2 hidden"></div>
+            </div>
+
+            <div id="fdiv-save" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4 hidden">
+                <h3 class="text-base font-bold text-emerald-400 border-b border-slate-800 pb-2">Compound Growth Wealth Projector</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Monthly Deposit</label>
+                        <input type="number" id="saveMonthly" placeholder="e.g. 500" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Annual APR %</label>
+                        <input type="number" id="saveRate" placeholder="e.g. 9" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Horizon (Years)</label>
+                    <input type="number" id="saveYears" placeholder="e.g. 15" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none">
+                </div>
+                <button onclick="calculateSavings()" class="w-full bg-emerald-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Project Wealth Growth 📈</button>
+                <div id="saveResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-2 hidden"></div>
+            </div>
+
+            <div id="fdiv-free" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4 hidden">
+                <h3 class="text-base font-bold text-cyan-400 border-b border-slate-800 pb-2">Gig Shift & Tip Tracker</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Base Gig Fare</label>
+                        <input type="number" id="freeBase" placeholder="e.g. 180" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Tips Received</label>
+                        <input type="number" id="freeTip" placeholder="e.g. 45" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                </div>
+                <button onclick="calculateFreelance()" class="w-full bg-cyan-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Calculate Shift Revenue ⚡</button>
+                <div id="freeResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm text-center hidden"></div>
+            </div>
+
+            <div id="fdiv-budget" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4 hidden">
+                <h3 class="text-base font-bold text-amber-400 border-b border-slate-800 pb-2">50/30/20 Budget Framework Planner</h3>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Net Monthly Take-Home Income</label>
+                    <input type="number" id="budgetIncome" placeholder="e.g. 5000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none">
+                </div>
+                <button onclick="calculateBudgetPlan()" class="w-full bg-amber-500 text-slate-950 text-xs font-bold py-3 rounded-xl cursor-pointer">Generate Framework 📊</button>
+                <div id="budgetResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-3 hidden"></div>
+            </div>
+
+            <div id="fdiv-loan" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4 hidden">
+                <h3 class="text-base font-bold text-violet-400 border-b border-slate-800 pb-2">Mortgage Loan Fixed Installment Calc</h3>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Total Principal Amount</label>
+                    <input type="number" id="loanAmount" placeholder="e.g. 350000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">APR %</label>
+                        <input type="number" id="loanRate" placeholder="e.g. 6.2" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Term (Years)</label>
+                        <input type="number" id="loanYears" placeholder="e.g. 30" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                </div>
+                <button onclick="calculateEMI()" class="w-full bg-violet-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Calculate Installment ⚡</button>
+                <div id="loanResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-2 hidden"></div>
+            </div>
+
+            <div id="fdiv-borrow" class="glass-card rounded-2xl p-5 border border-slate-800 space-y-4 hidden">
+                <h3 class="text-base font-bold text-rose-400 border-b border-slate-800 pb-2">Borrowing Capacity Affordability Calc</h3>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Comfortable Monthly Housing Budget</label>
+                    <input type="number" id="borrowBudget" placeholder="e.g. 1800" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Expected APR %</label>
+                        <input type="number" id="borrowRate" placeholder="e.g. 5.8" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Lifetime (Years)</label>
+                        <input type="number" id="borrowYears" placeholder="e.g. 30" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                </div>
+                <button onclick="calculateBorrowPower()" class="w-full bg-rose-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Estimate Capacity 📈</button>
+                <div id="borrowResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-2 hidden"></div>
+            </div>
+
+            <div id="fdiv-splitter" class="glass-card rounded-2xl p-5 border border-indigo-500/20 space-y-4 hidden">
+                <h3 class="text-base font-bold text-indigo-400 border-b border-slate-800 pb-2">🍕 Premium Tip & Bill Splitter</h3>
+                <div>
+                    <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Total Bill Amount</label>
+                    <input type="number" id="splitTotalBill" placeholder="e.g. 150" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Tip Percentage</label>
+                        <select id="splitTipPercent" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none">
+                            <option value="15">15% (Standard)</option>
+                            <option value="18" selected>18% (Good)</option>
+                            <option value="20">20% (Excellent)</option>
+                            <option value="0">0% (No Tip)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-slate-400 mb-1">Number of People</label>
+                        <input type="number" id="splitPeople" value="2" min="1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-white text-sm focus:outline-none">
+                    </div>
+                </div>
+                <button onclick="calculateBillSplit()" class="w-full bg-indigo-600 text-white text-xs font-bold py-3 rounded-xl cursor-pointer">Split Bill Evenly ⚡</button>
+                <div id="splitResult" class="bg-slate-950/60 rounded-xl p-4 border border-slate-800 text-sm space-y-2 hidden"></div>
+            </div>
+
+            <!-- CRYPTO REFERENCES -->
+            <div class="glass-card border border-slate-800 rounded-2xl p-5 space-y-5 bg-[#111827]/90 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-2 bg-indigo-600 text-[8px] font-black tracking-widest uppercase rounded-bl-xl text-white">PRO PARTNER</div>
+                <div class="text-center space-y-1.5">
+                    <div class="inline-flex p-2.5 bg-indigo-500/10 rounded-full text-indigo-400">
+                        <i class="fa-solid fa-gift text-xl animate-bounce"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold bg-gradient-to-r from-yellow-400 via-orange-500 to-indigo-400 bg-clip-text text-transparent tracking-wide">
+                        Exclusive Crypto Bonuses
+                    </h3>
+                </div>
+
+                <div class="space-y-3.5">
+                    <div class="rounded-xl bg-[#1f2937]/60 border border-yellow-500/30 p-4 flex flex-col justify-between space-y-3 hover:border-yellow-500/60 transition-all">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 bg-yellow-500/10 rounded-xl text-yellow-500 flex items-center justify-center text-xl font-bold">
+                                <i class="fa-brands fa-bitcoin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-100 text-xs tracking-wide">Binance Node</h4>
+                                <p class="text-[10px] text-yellow-500 font-semibold">Earn USDC Drops & 20% Fee Waiver</p>
+                            </div>
+                        </div>
+                        <a href="https://www.binance.com/referral/earn-together/refer2earn-usdc/claim?hl=en&ref=GRO_28502_0BL2I&utm_source=referral_entrance" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-black py-2.5 px-4 rounded-xl text-[11px] transition-all flex items-center justify-center space-x-1 shadow-lg">
+                            <span>Claim Binance Reward</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                        </a>
+                    </div>
+
+                    <div class="rounded-xl bg-[#1f2937]/60 border border-indigo-500/30 p-4 flex flex-col justify-between space-y-3 hover:border-indigo-500/60 transition-all">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-10 h-10 bg-indigo-500/10 rounded-xl text-indigo-400 flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-100 text-xs tracking-wide">CoinDCX Terminal</h4>
+                                <p class="text-[10px] text-indigo-400 font-semibold">Unlock Welcome Packages</p>
+                            </div>
+                        </div>
+                        <a href="https://invite.coindcx.com/76996503" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-black py-2.5 px-4 rounded-xl text-[11px] transition-all flex items-center justify-center space-x-1 shadow-lg">
+                            <span>Join CoinDCX Now</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TOOL 4: DEEP WORK TIMER ================= -->
+        <section id="tool-pomodoro" class="space-y-6 hidden">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white mb-2">⏱️ Deep Work Timer</h2>
+                <p class="text-slate-400 text-sm">Boost productivity and manage intense studies or work sprints using custom interval blocks.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-6 text-center border border-slate-800 space-y-6">
+                <div class="flex justify-center gap-2 bg-slate-950/80 p-1.5 rounded-xl border border-slate-800 max-w-xs mx-auto">
+                    <button id="pomo-mode-work" onclick="setTimerMode('work')" class="bg-indigo-600 text-white text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer">Focus Block</button>
+                    <button id="pomo-mode-break" onclick="setTimerMode('break')" class="text-slate-400 text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer">Short Break</button>
+                </div>
+                <div class="py-4">
+                    <span id="pomoCountdownDisplay" class="text-6xl font-black tracking-tight text-white font-mono">25:00</span>
+                    <p id="pomoStatusText" class="text-xs text-indigo-400 font-bold uppercase tracking-widest mt-2">Time to Focus 🎯</p>
+                </div>
+                <div class="flex justify-center gap-3">
+                    <button id="pomoStartBtn" onclick="togglePomodoro()" class="bg-emerald-600 text-white text-xs font-extrabold px-6 py-3 rounded-xl cursor-pointer">Start Timer</button>
+                    <button onclick="resetPomodoro()" class="bg-slate-900 border border-slate-700 text-slate-300 text-xs font-bold px-5 py-3 rounded-xl cursor-pointer">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TOOL 5: PLAY ZONE ================= -->
+        <section id="tool-playzone" class="space-y-6 hidden">
+            <div class="text-center mb-3">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white mb-1">🎮 Play Zone: 2048 Unblocked</h2>
+                <p class="text-slate-400 text-xs">Play 2048 unblocked game. Swipe anywhere on the board or use control buttons to slide and merge blocks.</p>
+            </div>
+            <div class="glass-card rounded-2xl p-4 border border-slate-800 space-y-4 max-w-sm mx-auto">
+                <div class="flex justify-between items-center bg-slate-950/40 p-2 rounded-xl border border-slate-900">
+                    <div>
+                        <span class="block text-[9px] uppercase tracking-widest text-slate-500 font-black">Score Engine</span>
+                        <span id="gameScore2048" class="text-xl font-black text-emerald-400">0</span>
+                    </div>
+                    <button onclick="initGame2048()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2 rounded-lg cursor-pointer">Restart Game 🔄</button>
+                </div>
+                <div id="board2048" class="grid grid-cols-4 gap-2 bg-slate-950 p-2 rounded-xl border border-slate-800 aspect-square w-full touch-none"></div>
+                <div class="grid grid-cols-3 gap-1.5 max-w-[160px] mx-auto pt-1">
+                    <div></div>
+                    <button onclick="move2048('up')" class="bg-slate-900 border border-slate-700 py-2.5 rounded-lg text-sm text-center font-bold active:bg-indigo-600 cursor-pointer">🔼</button>
+                    <div></div>
+                    <button onclick="move2048('left')" class="bg-slate-900 border border-slate-700 py-2.5 rounded-lg text-sm text-center font-bold active:bg-indigo-600 cursor-pointer">◀️</button>
+                    <button onclick="move2048('down')" class="bg-slate-900 border border-slate-700 py-2.5 rounded-lg text-sm text-center font-bold active:bg-indigo-600 cursor-pointer">🔽</button>
+                    <button onclick="move2048('right')" class="bg-slate-900 border border-slate-700 py-2.5 rounded-lg text-sm text-center font-bold active:bg-indigo-600 cursor-pointer">▶️</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 100% SAFE & SECURE PRIVACY POLICY SECTION ================= -->
+        <section class="mt-12 glass-card border border-slate-800 rounded-2xl p-6 space-y-4 shadow-xl">
+            <div class="border-b border-slate-800/80 pb-2 flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-indigo-400 text-lg"></i>
+                <h3 class="text-base font-bold text-white">Privacy Policy & Safety Disclosure</h3>
+            </div>
+            <div class="text-xs text-slate-400 space-y-3 leading-relaxed">
+                <p>
+                    Welcome to <strong class="text-indigo-400">MicroToolbox</strong>. Your data privacy and device security are our top functional priorities. Please read our verified privacy protocol matrix below:
+                </p>
+                <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+                    <li><strong>Zero Database Tracking:</strong> We do not host databases. All algorithmic metrics, calculation fields, and text processing occur entirely client-side directly on your local web engine node.</li>
+                    <li><strong>No Personal Logs:</strong> This tool hub does not request, gather, trace, or extract your names, financial configurations, passwords, or transactional details.</li>
+                    <li><strong>Third-Party Nodes:</strong> External verified partner redirects (e.g., promotional crypto gateways) are explicitly governed under their respective regulatory network parameters.</li>
+                    <li><strong>Secure Framework Execution:</strong> Entirely optimized without hidden script injectors, tracking cookies, or tracking pixels to guarantee extreme security performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FEEDBACK PORTAL -->
+        <section class="mt-6 glass-card border border-slate-800 rounded-2xl p-5 space-y-4 shadow-xl">
+            <div class="border-b border-slate-800/80 pb-2">
+                <span class="text-[9px] font-black uppercase tracking-widest text-indigo-400 block mb-0.5">Community Interface</span>
+                <h3 class="text-sm font-bold text-white">Submit Optimization Requests</h3>
+            </div>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-[9px] uppercase font-bold tracking-wider text-slate-500 mb-1">Your Feature Suggestions</label>
+                    <textarea id="feedbackText" rows="3" placeholder="Type what changes or new tools you want to setup on the platform..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white focus:outline-none focus:border-indigo-500 font-medium"></textarea>
+                </div>
+                <button onclick="dispatchFeedbackMail()" class="w-full bg-slate-900 border border-slate-700 hover:border-indigo-500/40 text-slate-200 text-xs font-bold py-2.5 rounded-xl cursor-pointer transition-all">
+                    Dispatch System Logs 📤
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950/60 py-6 text-center text-xs text-slate-500 mt-16 space-y-3">
+        <p class="font-medium">© 2026 MicroToolbox. All rights reserved.</p>
+        <p class="text-xs text-slate-400 font-semibold tracking-wide">Crafted beautifully as a Project by Sahil Ai</p> <!-- Footer Attribution Built-in -->
+        <div>
+            <button onclick="invokeNativeShareEngine()" class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-extrabold px-6 py-2.5 rounded-full shadow-lg text-xs active:scale-95 transition-all cursor-pointer">
+                <span>🔗 Share App with Friends</span>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Universal JavaScript Engine Core -->
+    <script>
+        let pomoInterval = null; let pomoMinutes = 25; let pomoSeconds = 0;
+        let pomoCurrentMode = 'work'; let pomoIsRunning = false;
+        let board2048Matrix = []; let score2048Val = 0;
+        let activeCurrencySymbol = '$'; let activeTaxRate = 0.12;
+        let touch2048StartX = 0; let touch2048StartY = 0;
+
+        // Custom Premium Global Toast System Notification Function
+        function triggerGlobalToastNotification(toastMsg) {
+            const hub = document.getElementById('toastNotificationHub');
+            const alertNode = document.createElement('div');
+            alertNode.className = "w-full mb-3 bg-slate-900/95 text-white font-semibold text-xs px-4 py-3 rounded-xl border border-indigo-500/30 flex items-center justify-between shadow-2xl backdrop-blur-md animate-toast-in";
+            alertNode.innerHTML = `<span>${toastMsg}</span><span class="text-[10px] text-emerald-400 font-black tracking-wider uppercase bg-emerald-500/10 px-1.5 py-0.5 rounded ml-2">Done</span>`;
+            hub.appendChild(alertNode);
+            setTimeout(function() {
+                alertNode.classList.remove('animate-toast-in');
+                alertNode.classList.add('animate-toast-out');
+                setTimeout(function() { alertNode.remove(); }, 300);
+            }, 2500);
+        }
+
+        // Updated Tool Switch Architecture (Water Node Displaced Safely)
+        function switchTool(toolName) {
+            ['font', 'qrcode', 'finance', 'pomodoro', 'playzone'].forEach(t => {
+                document.getElementById('tool-' + t).classList.add('hidden');
+                document.getElementById('tab-' + t).classList.remove('active-tab');
+            });
+            document.getElementById('tool-' + toolName).classList.remove('hidden');
+            document.getElementById('tab-' + toolName).classList.add('active-tab');
+            if (toolName === 'playzone') initGame2048();
+        }
+
+        function switchFinanceTab(subName) {
+            ['pay', 'save', 'free', 'budget', 'loan', 'borrow', 'splitter'].forEach(s => {
+                document.getElementById('fdiv-' + s).classList.add('hidden');
+                document.getElementById('fsub-' + s).classList.remove('active-finance-tab');
+            });
+            document.getElementById('fdiv-' + subName).classList.remove('hidden');
+            document.getElementById('fsub-' + subName).classList.add('active-finance-tab');
+        }
+
+        function activateCountryProtocol(countryCode, flagEmoji, customGreeting) {
+            const targetPills = event.target.parentElement.children;
+            for(let i=0; i<targetPills.length; i++) targetPills[i].classList.remove('active-country-pill');
+            event.target.classList.add('active-country-pill');
+
+            document.getElementById('flagIconSlot').innerText = flagEmoji;
+            document.getElementById('flagMessageSlot').innerText = customGreeting;
+            document.getElementById('currencyTitle').innerText = countryCode;
+
+            if (countryCode === 'UK') { activeCurrencySymbol = '£'; activeTaxRate = 0.22; }
+            else if (countryCode === 'GER') { activeCurrencySymbol = '€'; activeTaxRate = 0.30; }
+            else if (countryCode === 'UAE') { activeCurrencySymbol = '𝓓𝓱'; activeTaxRate = 0.00; }
+            else if (countryCode === 'AUS') { activeCurrencySymbol = 'A$'; activeTaxRate = 0.25; }
+            else if (countryCode === 'CAN') { activeCurrencySymbol = 'C$'; activeTaxRate = 0.20; }
+            else { activeCurrencySymbol = '$'; activeTaxRate = 0.15; }
+        }
+
+        function calculateTakeHome() {
+            const gross = parseFloat(document.getElementById('grossSalary').value) || 0;
+            const resDiv = document.getElementById('payResult');
+            if(gross <= 0) { alert('Please enter valid income bounds'); return; }
+            let totalTaxCalculated = gross * activeTaxRate;
+            let net = gross - totalTaxCalculated;
+            resDiv.innerHTML = `
+                <div class="flex justify-between"><span>Gross Income:</span><span class="font-bold">${activeCurrencySymbol}${gross.toFixed(2)}</span></div>
+                <div class="flex justify-between text-rose-400"><span>Estimated Tax Index:</span><span>-${activeCurrencySymbol}${totalTaxCalculated.toFixed(2)}</span></div>
+                <div class="flex justify-between border-t border-slate-800 pt-2 text-emerald-400 font-bold text-base"><span>Net Take-Home Paycheck:</span><span>${activeCurrencySymbol}${net.toFixed(2)}</span></div>
+            `;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification(`Net Paycheck Generated for ${document.getElementById('currencyTitle').innerText}!`);
+        }
+
+        function calculateSavings() {
+            const monthly = parseFloat(document.getElementById('saveMonthly').value) || 0;
+            const rate = parseFloat(document.getElementById('saveRate').value) || 0;
+            const years = parseInt(document.getElementById('saveYears').value) || 0;
+            const resDiv = document.getElementById('saveResult');
+            if(monthly <= 0 || years <= 0) { alert('Please fill fields correctly'); return; }
+            let totalInvested = monthly * 12 * years;
+            let r = (rate / 100) / 12; let months = years * 12;
+            let totalWealth = r > 0 ? monthly * ((Math.pow(1 + r, months) - 1) / r) * (1 + r) : totalInvested;
+            let interestEarned = totalWealth - totalInvested;
+            resDiv.innerHTML = `
+                <div class="flex justify-between"><span>Total Saved Principal:</span><span class="font-bold">${activeCurrencySymbol}${totalInvested.toFixed(2)}</span></div>
+                <div class="flex justify-between text-cyan-400"><span>Compound Interest Yield:</span><span>+${activeCurrencySymbol}${interestEarned.toFixed(2)}</span></div>
+                <div class="flex justify-between border-t border-slate-800 pt-2 text-emerald-400 font-bold text-base"><span>Projected Future Wealth:</span><span>${activeCurrencySymbol}${totalWealth.toFixed(2)}</span></div>
+            `;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("Compound Wealth Projected!");
+        }
+
+        function calculateFreelance() {
+            const base = parseFloat(document.getElementById('freeBase').value) || 0;
+            const tip = parseFloat(document.getElementById('freeTip').value) || 0;
+            const resDiv = document.getElementById('freeResult');
+            resDiv.innerHTML = `Total Shift Revenue: <span class="font-black text-cyan-400 text-lg">${activeCurrencySymbol}${(base + tip).toFixed(2)}</span>`;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("Gig Revenue Compiled!");
+        }
+
+        function calculateBudgetPlan() {
+            const inc = parseFloat(document.getElementById('budgetIncome').value) || 0;
+            const resDiv = document.getElementById('budgetResult');
+            if(inc <= 0) { alert('Please enter monthly income parameters'); return; }
+            resDiv.innerHTML = `
+                <div class="flex justify-between text-sky-400"><span>50% Essential Needs:</span><span class="font-bold">${activeCurrencySymbol}${(inc * 0.5).toFixed(2)}</span></div>
+                <div class="flex justify-between text-amber-400"><span>30% Wants:</span><span class="font-bold">${activeCurrencySymbol}${(inc * 0.3).toFixed(2)}</span></div>
+                <div class="flex justify-between text-emerald-400"><span>20% Savings Reserve:</span><span class="font-bold">${activeCurrencySymbol}${(inc * 0.2).toFixed(2)}</span></div>
+            `;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("50/30/20 Framework Mapped!");
+        }
+
+        function calculateEMI() {
+            const p = parseFloat(document.getElementById('loanAmount').value) || 0;
+            const annualRate = parseFloat(document.getElementById('loanRate').value) || 0;
+            const years = parseInt(document.getElementById('loanYears').value) || 0;
+            const resDiv = document.getElementById('loanResult');
+            if (p <= 0 || annualRate <= 0 || years <= 0) { alert('Please enter valid constraints'); return; }
+            let r = (annualRate / 100) / 12; let n = years * 12;
+            let monthlyPayment = p * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+            resDiv.innerHTML = `
+                <div class="flex justify-between text-violet-400 font-bold text-base"><span>Monthly Payment (EMI):</span><span>${activeCurrencySymbol}${monthlyPayment.toFixed(2)}</span></div>
+            `;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("Mortgage Installment Calculated!");
+        }
+
+        function calculateBorrowPower() {
+            const monthlyBudget = parseFloat(document.getElementById('borrowBudget').value) || 0;
+            const annualRate = parseFloat(document.getElementById('borrowRate').value) || 0;
+            const years = parseInt(document.getElementById('borrowYears').value) || 0;
+            const resDiv = document.getElementById('borrowResult');
+            if (monthlyBudget <= 0 || annualRate <= 0 || years <= 0) { alert('Please fill fields correctly'); return; }
+            let r = (annualRate / 100) / 12; let n = years * 12;
+            let maxLoan = monthlyBudget * (Math.pow(1 + r, n) - 1) / (r * Math.pow(1 + r, n));
+            resDiv.innerHTML = `<div class="flex justify-between text-emerald-400 font-bold text-base"><span>Max Borrow Capacity:</span><span>${activeCurrencySymbol}${maxLoan.toFixed(2)}</span></div>`;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("Affordability Capacity Mapped!");
+        }
+
+        function calculateBillSplit() {
+            const totalBill = parseFloat(document.getElementById('splitTotalBill').value) || 0;
+            const tipPercent = parseFloat(document.getElementById('splitTipPercent').value) || 0;
+            const people = parseInt(document.getElementById('splitPeople').value) || 1;
+            const resDiv = document.getElementById('splitResult');
+            if (totalBill <= 0 || people < 1) { alert('Please check split fields'); return; }
+            let share = (totalBill + (totalBill * (tipPercent / 100))) / people;
+            resDiv.innerHTML = `<div class="flex justify-between text-emerald-400 font-black text-base"><span>Each Person Pays:</span><span>${activeCurrencySymbol}${share.toFixed(2)}</span></div>`;
+            resDiv.classList.remove('hidden');
+            triggerGlobalToastNotification("Bill Split Complete!");
+        }
+
+        // Font Generator Dictionary Maps
+        const alphabets = {
+            script: {A:'𝒜',B:'ℬ',C:'𝒞',D:'𝒟',E:'ℰ',F:'ℱ',G:'𝒢',H:'ℋ',I:'ℐ',J:'𝒥',K:'𝒦',L:'ℒ',M:'ℳ',N:'𝒩',O:'𝒪',P:'𝒫',Q:'𝒬',R:'ℛ',S:'𝒮',T:'𝒯',U:'𝒰',V:'𝒱',W:'𝒲',X:'𝒳',Y:'𝒴',Z:'𝒵',a:'𝒶',b:'𝒷',c:'𝒸',d:'𝒹',e:'ℯ',f:'𝒻',g:'ℊ',h:'𝒽',i:'𝒾',j:'𝒿',k:'𝓀',l:'𝓁',m:'𝓂',n:'𝔫',o:'ℴ',p:'𝓅',q:'𝓆',r:'𝓇',s:'𝓈',t:'𝔱',u:'🇺',v:'𝓋',w:'𝓌',x:'𝓍',y:'𝓎',z:'𝓏'},
+            bold: {A:'𝐁',C:'𝐂',D:'𝐃',E:'𝐄',F:'𝐅',G:'𝐆',H:'𝐇',I:'𝐈',J:'',K:'𝐊',L:'𝐋',M:'𝐌',N:'𝐍',O:'𝐎',P:'𝐏',Q:'',R:'𝐑',S:'𝐒',T:'𝐓',U:'𝐔',V:'𝐕',W:'𝐖',X:'𝐗',Y:'𝐘',Z:'𝐙',a:'𝐚',b:'𝐛',c:'𝐜',d:'𝐝',e:'𝐞',f:'𝐟',g:'𝐠',h:'𝐡',i:'𝐢',j:'𝐣',k:'𝐤',l:'𝐥',m:'𝐦',n:'𝐧',o:'𝐨',p:'𝐩',q:'𝐪',r:'𝐫',s:'𝐬',t:'𝐭',u:'𝐮',v:'𝐯',w:'𝐰',x:'𝐱',y:'𝐲',z:'𝐳'},
+            double: {A:'𝔸',B:'𝔹',C:'ℂ',D:'𝔻',E:'𝔼',F:'𝔽',G:'𝔾',H:'ℍ',I:'mathbb{I}',J:'𝕁',K:'𝕂',L:'𝕃',M:'𝕄',N:'ℕ',O:'𝕆',P:'ℙ',Q:'ℚ',R:'ℝ',S:'𝕊',T:'𝕋',U:'𝕌',V:'𝕍',W:'𝕎',X:'𝕏',Y:'𝕐',Z:'ℤ',a:'𝕒',b:'𝕓',c:'𝕔',d:'𝕕',e:'𝕖',f:'𝕗',g:'𝕘',h:'𝕙',i:'𝕚',j:'𝕛',k:'𝕜',l:'𝕝',m:'𝕞',n:'𝕫',o:'𝕠',p:'𝕡',q:'𝕢',r:'𝕣',s:'𝕤',t:'𝕥',u:'𝕦',v:'𝕧',w:'𝕨',x:'𝕩',y:'𝕪',z:'𝕫'},
+            gothic: {A:'𝔄',B:'𝔅',C:'𝔆',D:'𝔇',E:'𝔈',F:'𝔉',G:'𝔊',H:'𝔋',I:'𝔌',J:'𝔍',K:'𝔎',L:'𝔏',M:'𝔐',N:'𝔑',O:'𝔒',P:'𝔓',Q:'𝔔',R:'ℜ',S:'𝔖',T:'𝔗',U:'𝔘',V:'𝔙',W:'𝔚',X:'𝔛',Y:'𝔜',Z:'ℨ',a:'𝔞',b:'𝔟',c:'𝔠',d:'𝔡',e:'𝔢',f:'𝔣',g:'𝔤',h:'𝔧',i:'𝔦',j:'𝔨',k:'𝔫',l:'𝔩',m:'𝔪',n:'𝔭',o:'𝔬',p:'𝔮',q:'𝔲',r:'𝔯',s:'𝔰',t:'𝔱',u:'𝔵',v:'𝔶',w:'𝔷'},
+            italic: {A:'𝘈',B:'𝘉',C:'𝘊',D:'𝘋',E:'𝘌',F:'𝘍',G:'𝘎',H:'𝘏',I:'𘘗',J:'𝘑',K:'𝘨',L:'𘘓',M:'𝘔',N:'𝘕',O:'𝘖',P:'𘘗',Q:'𘘘',R:'𘘙',S:'𘘚',T:'𘘛',U:'𘘜',V:'𘘝',W:'𘘞',X:'𘘟',Y:'𘘠',Z:'𘘡',a:'𝘢',b:'𝘣',c:'𝘤',d:'𝘥',e:'𝘦',f:'𝘧',g:'𝘨',h:'𝘩',i:'𝘪',j:'𝘫',k:'𝘬',l:'𝘭',m:'𝘮',n:'𝘯',o:'𝘰',p:'𝘱',q:'𘘲',r:'𝘳',s:'𝘴',t:'𝘵',u:'𝘶',v:'𝘷',w:'𝘸',x:'𝘹',y:'𝘺',z:'𝘻'},
+            mono: {A:'𝖛',B:'𝖜',C:'𝖝',D:'𝖞',E:'𝖟',F:'𝖠',G:'𝖡',H:'𝖢',I:'𝖣',J:'𝖤',K:'𝖥',L:'𝖦',M:'𝖧',N:'𝖨',O:'𝖩',P:'𝖪',Q:'𝖫',R:'𝖬',S:'𝖭',T:'𝖮',U:'𝖯',V:'𝖰',W:'𝖱',X:'𝖲',Y:'𝖳',Z:'𝖴',a:'𝖆',b:'𝖇',c:'𝖈',d:'𝖉',e:'𝖊',f:'𝖋',g:'𝖌',h:'𝖍',i:'𝖎',j:'𝖏',k:'𝖐',l:'𝖑',m:'𝖒',n:'𝖓',o:'𝖔',p:'𝖕',q:'𝖖',r:'𝖗',s:'𝖘',t:'𝖙',u:'𝖚',v:'𝖛',w:'𝖜',x:'𝖝',y:'𝖞',z:'𝖟'},
+            bubble: {A:'Ⓐ',B:'ℬ',C:'Ⓒ',D:'Ⓓ',E:'Ⓔ',F:'Ⓕ',G:'𝒢',H:'Ⓗ',I:'Ⓘ',J:'Ⓙ',K:'Ⓚ',L:'Ⓛ',M:'Ⓜ',N:'Ⓝ',O:'Ⓞ',P:'Ⓟ',Q:'Ⓠ',R:'Ⓡ',S:'Ⓢ',T:'Ⓣ',U:'Ⓤ',V:'Ⓥ',W:'Ⓦ',X:'Ⓧ',Y:'Ⓨ',Z:'Ⓩ',a:'ⓐ',b:'ⓑ',c:'ⓒ',d:'ⓓ',e:'ⓔ',f:'ⓕ',g:'ⓖ',h:'ⓗ',i:'ⓘ',j:'ⓙ',k:'𝓀',l:'ⓛ',m:'ⓜ',n:'ⓝ',o:'ⓞ',p:'ⓟ',q:'ⓠ',r:'ⓡ',s:'ⓢ',t:'ⓣ',u:'🇺',v:'𝓋',w:'ⓦ',x:'ⓧ',y:'ⓨ',z:'ⓩ'},
+            square: {A:'🄰',B:'🄱',C:'🄲',D:'🄳',E:'🄴',F:'🄵',G:'🄶',H:'🄷',I:'🄸',J:'🄹',K:'🄺',L:'🄻',M:'🄼',N:'🄽',O:'🄾',P:'🄿',Q:'🄲',R:'🅁',S:'🅂',T:'🅃',U:'🅄',V:'🅅',W:'🅆',X:'🅇',Y:'🅈',Z:'🅉',a:'🄰',b:'🄱',c:'🄲',d:'🄳',e:'🄴',f:'🄵',g:'🄶',h:'🄷',i:'🄸',j:'🄹',k:'🄺',l:'🄻',m:'🄼',n:'🄽',o:'🄾',p:'🄿',q:'🄲',r:'🅁',s:'🅂',t:'🅃',u:'🅄',v:'🅅',w:'🅆',x:'🅇',y:'🅈',z:'🅉'}
+        };
+
+        function makeFont(txt, dict) {
+            let res = ''; for(let i=0; i<txt.length; i++) { res += dict[txt[i]] || txt[i]; } return res;
+        }
+
+        document.getElementById('userInput').addEventListener('input', function() {
+            const val = this.value; const container = document.getElementById('fontResults');
+            if(!val) { container.innerHTML = `<div class="text-center py-12 text-slate-500 text-sm border-2 border-dashed border-slate-800/60 rounded-2xl bg-slate-950/20"><p class="font-medium text-slate-400">Waiting for text input...</p></div>`; return; }
+
+            const styles = [
+                { name: "✨ Script Aesthetic", text: makeFont(val, alphabets.script) },
+                { name: "🔥 Mathematical Bold", text: makeFont(val, alphabets.bold) },
+                { name: "💎 Double Struck Node", text: makeFont(val, alphabets.double) },
+                { name: "🔮 Old English Gothic", text: makeFont(val, alphabets.gothic) },
+                { name: "🌌 Modern Slanted Italic", text: makeFont(val, alphabets.italic) },
+                { name: "⚙️ Cyber Monospace", text: makeFont(val, alphabets.mono) },
+                { name: "🎈 Pure Bubble Encased", text: makeFont(val, alphabets.bubble) },
+                { name: "📦 Block Squared Layout", text: makeFont(val, alphabets.square) },
+                { name: "🚀 Wide Vaporwave Space", text: val.split('').join(' ') },
+                { name: "✦ Star Protocol Edge", text: "✦ " + val + " ✦" },
+                { name: "♥ Romanticized Hearts", text: "♥ " + val + " ♥" },
+                { name: "👑 Imperial Bracket Deck", text: "〔 " + val + " 〕" },
+                { name: "⚡ High Voltage Slashes", text: "⚡" + val + "⚡" },
+                { name: "🎯 Target Sniper Bracket", text: "【 " + val + " 】" },
+                { name: "💎 Luxury Diamond Guard", text: "♦ " + val + " ♦" },
+                { name: "🌿 Clean Leaf Minimalist", text: "🍃 " + val + " 🍃" }
+            ];
+
+            let html = '';
+            for(let i=0; i<styles.length; i++) {
+                html += `
+                    <div class="glass-card border border-slate-800 p-5 rounded-xl flex justify-between items-center hover:border-indigo-500/40 transition-all">
+                        <div class="overflow-x-auto pr-4 w-full">
+                            <span class="block text-[10px] font-bold text-slate-500 tracking-widest uppercase mb-1.5">${styles[i].name}</span>
+                            <input type="text" id="target-${i}" value="${styles[i].text}" readonly class="text-xl text-white font-semibold bg-transparent border-none outline-none w-full select-all">
+                        </div>
+                        <button onclick="copyText('target-${i}', this)" class="bg-indigo-600/10 text-indigo-400 border border-indigo-500/20 px-4 py-2 rounded-xl text-xs font-bold shrink-0">Copy</button>
+                    </div>`;
+            }
+            container.innerHTML = html;
+        });
+
+        function copyText(id, btn) {
+            const el = document.getElementById(id); el.select(); document.execCommand("copy");
+            const old = btn.innerText; btn.innerText = "Copied!"; btn.className = "bg-emerald-600 text-white px-4 py-2 rounded-xl text-xs font-bold shrink-0 shadow-md";
+            setTimeout(function() { btn.innerText = old; btn.className = "bg-indigo-600/10 text-indigo-400 border border-indigo-500/20 px-4 py-2 rounded-xl text-xs font-bold shrink-0"; }, 1500);
+            
+            triggerGlobalToastNotification("✨ Custom Font Text Copied!");
+        }
+
+        function generateQRCode() {
+            const qrText = document.getElementById('qrInput').value.trim();
+            const qrDisplayDiv = document.getElementById('qrcode');
+            const resultCard = document.getElementById('qrResultCard');
+            if (!qrText) { alert("Please enter text!"); return; }
+            qrDisplayDiv.innerHTML = "";
+            new QRCode(qrDisplayDiv, { text: qrText, width: 180, height: 180, colorDark : "#0f172a", colorLight : "#ffffff", correctLevel : QRCode.CorrectLevel.H });
+            resultCard.classList.remove('hidden');
+            triggerGlobalToastNotification("📷 Smart QR Code Rendered!");
+        }
+
+        function resetQR() {
+            document.getElementById('qrInput').value = ""; document.getElementById('qrcode').innerHTML = "";
+            document.getElementById('qrResultCard').classList.add('hidden');
+        }
+
+        function setTimerMode(mode) {
+            if (pomoIsRunning) togglePomodoro();
+            pomoCurrentMode = mode;
+            const workBtn = document.getElementById('pomo-mode-work'); const breakBtn = document.getElementById('pomo-mode-break');
+            const statusTxt = document.getElementById('pomoStatusText');
+            if (mode === 'work') {
+                pomoMinutes = 25; workBtn.className = "bg-indigo-600 text-white text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer";
+                breakBtn.className = "text-slate-400 text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer"; statusTxt.innerText = "Time to Focus 🎯";
+            } else {
+                pomoMinutes = 5; breakBtn.className = "bg-emerald-600 text-white text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer";
+                workBtn.className = "text-slate-400 text-[11px] font-bold px-4 py-1.5 rounded-lg cursor-pointer"; statusTxt.innerText = "Take a Short Break ☕";
+            }
+            pomoSeconds = 0; updatePomodoroDisplay();
+        }
+
+        function updatePomodoroDisplay() {
+            let mStr = pomoMinutes < 10 ? '0' + pomoMinutes : pomoMinutes; let sStr = pomoSeconds < 10 ? '0' + pomoSeconds : pomoSeconds;
+            document.getElementById('pomoCountdownDisplay').innerText = mStr + ':' + sStr;
+        }
+
+        function togglePomodoro() {
+            const startBtn = document.getElementById('pomoStartBtn');
+            if (pomoIsRunning) { clearInterval(pomoInterval); pomoIsRunning = false; startBtn.innerText = "Resume Timer"; }
+            else {
+                pomoIsRunning = true; startBtn.innerText = "Pause Timer";
+                pomoInterval = setInterval(function() {
+                    if (pomoSeconds === 0) {
+                        if (pomoMinutes === 0) {
+                            clearInterval(pomoInterval); pomoIsRunning = false;
+                            if (pomoCurrentMode === 'work') { triggerGlobalToastNotification("⏱️ Focus Block Completed!"); setTimerMode('break'); }
+                            else { triggerGlobalToastNotification("⏱️ Break Finished! Back to Work."); setTimerMode('work'); }
+                            return;
+                        }
+                        pomoMinutes--; pomoSeconds = 59;
+                    } else pomoSeconds--;
+                    updatePomodoroDisplay();
+                }, 1000);
+            }
+        }
+
+        function resetPomodoro() { clearInterval(pomoInterval); pomoIsRunning = false; document.getElementById('pomoStartBtn').innerText = "Start Timer"; setTimerMode(pomoCurrentMode); }
+
+        // 2048 Core Logic
+        function initGame2048() {
+            board2048Matrix = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]; score2048Val = 0;
+            document.getElementById('gameScore2048').innerText = score2048Val;
+            generateRandomTile2048(); generateRandomTile2048(); renderBoard2048(); setupTouchGestures2048();
+        }
+
+        function generateRandomTile2048() {
+            let emptyCells = [];
+            for (let r = 0; r < 4; r++) { for (let c = 0; c < 4; c++) { if (board2048Matrix[r][c] === 0) emptyCells.push({r: r, c: c}); } }
+            if (emptyCells.length > 0) {
+                let randomPick = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+                board2048Matrix[randomPick.r][randomPick.c] = Math.random() < 0.9 ? 2 : 4;
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('tool-playzone').classList.contains('hidden')) return;
+            if (e.key === 'ArrowUp' || e.key.toLowerCase() === 'w') { e.preventDefault(); move2048('up'); }
+            else if (e.key === 'ArrowDown' || e.key.toLowerCase() === 's') { e.preventDefault(); move2048('down'); }
+            else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a') { e.preventDefault(); move2048('left'); }
+            else if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'd') { e.preventDefault(); move2048('right'); }
+        });
+
+        function renderBoard2048() {
+            const boardNode = document.getElementById('board2048'); boardNode.innerHTML = '';
+            for (let r = 0; r < 4; r++) {
+                for (let c = 0; c < 4; c++) {
+                    let val = board2048Matrix[r][c]; let cellClass = val === 0 ? 'tile-empty' : 'tile-' + val;
+                    boardNode.innerHTML += `<div class="grid-2048-cell ${cellClass}">${val === 0 ? '' : val}</div>`;
+                }
+            }
+        }
+
+        function setupTouchGestures2048() {
+            const boardEl = document.getElementById('board2048');
+            boardEl.addEventListener('touchstart', function(e) { touch2048StartX = e.touches[0].clientX; touch2048StartY = e.touches[0].clientY; }, { passive: true });
+            boardEl.addEventListener('touchend', function(e) {
+                if (!touch2048StartX || !touch2048StartY) return;
+                let diffX = e.changedTouches[0].clientX - touch2048StartX; let diffY = e.changedTouches[0].clientY - touch2048StartY;
+                if (Math.abs(diffX) > Math.abs(diffY)) {
+                    if (Math.abs(diffX) > 35) { if (diffX > 0) move2048('right'); else move2048('left'); }
+                } else {
+                    if (Math.abs(diffY) > 35) { if (diffY > 0) move2048('down'); else move2048('up'); }
+                }
+                touch2048StartX = 0; touch2048StartY = 0;
+            }, { passive: true });
+        }
+
+        function filterZero(row) { return row.filter(num => num !== 0); }
+        function slideRow2048(row) {
+            row = filterZero(row);
+            for (let i = 0; i < row.length - 1; i++) { if (row[i] === row[i+1]) { row[i] *= 2; row[i+1] = 0; score2048Val += row[i]; } }
+            row = filterZero(row); while (row.length < 4) { row.push(0); } return row;
+        }
+
+        function move2048(direction) {
+            let oldBoardStr = JSON.stringify(board2048Matrix);
+            if (direction === 'left') { for (let r = 0; r < 4; r++) board2048Matrix[r] = slideRow2048(board2048Matrix[r]); }
+            else if (direction === 'right') { for (let r = 0; r < 4; r++) { board2048Matrix[r].reverse(); board2048Matrix[r] = slideRow2048(board2048Matrix[r]); board2048Matrix[r].reverse(); } }
+            else if (direction === 'up') {
+                for (let c = 0; c < 4; c++) {
+                    let row = [board2048Matrix[0][c], board2048Matrix[1][c], board2048Matrix[2][c], board2048Matrix[3][c]];
+                    row = slideRow2048(row); for (let r = 0; r < 4; r++) board2048Matrix[r][c] = row[r];
+                }
+            } else if (direction === 'down') {
+                for (let c = 0; c < 4; c++) {
+                    let row = [board2048Matrix[0][c], board2048Matrix[1][c], board2048Matrix[2][c], board2048Matrix[3][c]].reverse();
+                    row = slideRow2048(row).reverse(); for (let r = 0; r < 4; r++) board2048Matrix[r][c] = row[r];
+                }
+            }
+            if (oldBoardStr !== JSON.stringify(board2048Matrix)) { generateRandomTile2048(); renderBoard2048(); document.getElementById('gameScore2048').innerText = score2048Val; checkGameOver2048(); }
+        }
+
+        function checkGameOver2048() {
+            for (let r = 0; r < 4; r++) {
+                for (let c = 0; c < 4; c++) {
+                    if (board2048Matrix[r][c] === 0) return;
+                    if (r < 3 && board2048Matrix[r][c] === board2048Matrix[r+1][c]) return;
+                    if (c < 3 && board2048Matrix[r][c] === board2048Matrix[r][c+1]) return;
+                }
+            }
+            alert("Game Over!");
+        }
+
+        function dispatchFeedbackMail() {
+            const txt = document.getElementById('feedbackText').value.trim(); if(!txt) { alert("Please type feedback log!"); return; }
+            window.location.href = `mailto:createbysahilai@gmail.com?subject=MicroToolbox%20Feedback&body=${encodeURIComponent(txt)}`;
+        }
+
+        function invokeNativeShareEngine() {
+            if (navigator.share) navigator.share({ title: 'MicroToolbox', text: 'Premium Free Utility Hub & Deep Focus Play Zone', url: window.location.href });
+            else alert("Copy URL directly from your dashboard to share!");
+        }
+    </script>
+</body>
+</html>
